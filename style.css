@@ -1,0 +1,37 @@
+<style>
+body {
+    background-image: url(/assets/background.jpeg);
+    margin: 0;
+}
+
+.header {
+    place-items: center;
+    width: 100vw;
+    height: 10vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container {
+    place-items: center;
+    width: 50vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    grid-template: 50px 1fr 1fr 100px, repeat(2, 1fr);
+
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container div {
+    padding: 10px;
+}
+
+    }
+</style>
