@@ -2,33 +2,62 @@ body {
     background-image: url(https://github.com/m-i-k-e-s/m-i-k-e-s.github.io/blob/main/background.jpeg?raw=true);
 }
 
-.header {
-    place-items: center;
-    width: 100vw;
-    height: 10vh;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
 .container {
-    place-items: center;
-    width: 50vw;
-    height: 100vh;
-
-    font-family: 'Quicksand', 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
-
+    padding: 2rem;
     display: grid;
-    grid-template: 50px 1fr 1fr 100px, repeat(2, 1fr);
-
-    gap: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header Header"
+        "Content1 Content2 Content3small"
+        "Content1 Content2 Content4small"
+        "Content1 Content2 Content4small"
+        "Footer Footer Footer";
 }
 
-.container div {
-    padding: 10px;
+.Header {
+    grid-area: Header;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: center;
+
 }
 
-    }
+.Content1 {
+    grid-area: Content1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+.Content2 {
+    grid-area: Content2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.Content3small {
+    grid-area: Content3small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.Content4small {
+    grid-area: Content4small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    font-weight: normal;
+}
+
+.Footer {
+    grid-area: Footer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style:italic;
+}
