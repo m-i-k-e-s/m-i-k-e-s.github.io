@@ -4,9 +4,17 @@ body {
     background-size: 100% 100%;
 }
 
+.content2 {
+    height: 100px
+}
+
 img {
     border-radius: 50%;
-  }
+    width: auto;
+    max-height: 50%;
+    
+}
+
 
 .container {
     padding: 2rem;
@@ -45,7 +53,7 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: normal;
-    
+
 }
 
 .Content3small {
@@ -66,5 +74,5 @@ img {
     grid-area: Footer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    font-style:italic;
+    font-style: italic;
 }
